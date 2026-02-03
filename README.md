@@ -1,31 +1,10 @@
-🏠 California Housing Price Prediction with XGBoost
+--- FINAL MODEL PERFORMANCE ---
+Training Set (Train) -> R2: 0.9854 | RMSE: 13899.75
+Test Set (Test)      -> R2: 0.8532 | RMSE: 44417.85
+🏆 Final Decision: Model Selection (Summary)
 
-This project is an end-to-end machine learning study developed to predict house prices using the California housing dataset. The main focus of the project is not merely achieving a high score, but ensuring that the model generalizes well to real-world data.
+🚀 After testing multiple models and optimization strategies, we deliberately selected a balanced XGBoost baseline model with 0.87 Train R² and 0.82 Test R².
 
-🚀 Project Highlights
+⚠️ Although the optimized model reached an impressive ~0.98 Train R², its weaker test performance revealed overfitting. ⚖️ Our chosen model maintains a smaller gap between Train and Test scores, ensuring better generalization, higher stability, and more trustworthy predictions on unseen data.
 
-Comprehensive Exploratory Data Analysis (EDA): Data distributions, location-based visualizations, and correlation analyses.
-
-Feature Engineering: Model performance was improved by deriving more meaningful features from raw data (e.g., rooms per household).
-
-Outlier Handling: Noisy values in the target variable were removed using the IQR method.
-
-Model Comparison: Models such as Linear Regression, Random Forest, and AdaBoost were compared against XGBoost.
-
-Hyperparameter Optimization: Optimal parameters were identified using RandomizedSearchCV.
-
-⚖️ Strategic Decision: Overfitting Control
-
-In this project, instead of choosing a highly complex model that achieved a 98% R² score on the training set, a baseline XGBoost model with a more balanced relationship between training and test scores (Train: 0.87, Test: 0.82) was preferred. This decision was made to prevent overfitting and to produce more reliable predictions.
-
-🛠️ Technologies Used
-
-Language: Python
-
-Libraries: Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn
-
-📊 Results
-
-Final Test R² Score: 0.82
-
-Final RMSE: ~42,000 $
+✅ Key takeaway: 📉 Slightly lower training performance + 📈 strong test results = a smarter, real-world-ready model 💡
